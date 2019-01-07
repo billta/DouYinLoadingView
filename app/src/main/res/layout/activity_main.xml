@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.ld.douyinloadingview.MainActivity">
+<LinearLayout
+    android:layout_weight="1"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="0dp">
+   <com.ld.douyinloadingview.DYLoadingView
+       app:color1="#FF00EEEE"
+       app:color2="#FFFF4040"
+       android:background="#000000"
+       android:id="@+id/dy1"
+       android:layout_weight="1"
+       android:layout_width="match_parent"
+       android:layout_height="0dp"/>
+
+   <com.ld.douyinloadingview.DYLoadingView
+       app:color1="#FF00EEEE"
+       app:color2="#FFFF4040"
+       android:background="#000000"
+       android:id="@+id/dy2"
+       android:layout_weight="1"
+       android:layout_width="match_parent"
+       android:layout_height="0dp"/>
+
+</LinearLayout>
+
+  <LinearLayout
+      android:gravity="center"
+      android:orientation="horizontal"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+   <Button
+
+       android:id="@+id/button1"
+       android:text="start"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"/>
+
+   <Button
+       android:id="@+id/button2"
+       android:text="stop"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"/>
+  </LinearLayout>
+</LinearLayout>
